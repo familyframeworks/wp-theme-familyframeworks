@@ -338,10 +338,10 @@ img.wp-smiley {
 	}
 #header {
 	overflow: hidden;
-	width: 1024px;
-	height: 200px;
+	width: 800px;
+	height: 113px;
 	margin: 0 auto;
-	background: url(images/StAnthonyFalls.jpg) no-repeat center 0;
+	background: url(images/header_logo.jpg) no-repeat center 0;
 	}
 #header-title {
 	-moz-background-clip:border;
@@ -353,7 +353,7 @@ img.wp-smiley {
 	height:35px;
 	margin:0 auto;
 	overflow:hidden;
-	width:1024px;
+	width:800px;
 	}
 #site-title {
 	margin: 6px 0 0 10px;
@@ -396,7 +396,7 @@ img.wp-smiley {
 #navigation {
 	overflow: hidden;
 	height: 33px;
-	width: 1024px;
+	width: 800px;
 	margin: 0px auto;
 	padding: none;
 	background:#0A2A35 none repeat scroll 0 0;

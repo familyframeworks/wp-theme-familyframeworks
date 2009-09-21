@@ -24,13 +24,6 @@
 
 <div id="body-container">
 		<div id="header-container">
-			<div id="header-title">
-				<div id="site-title">
-					<a class="standard" href="<?php bloginfo('url'); ?>">
-						<?php bloginfo('description'); ?>
-					</a>
-				</div>
-			</div>
 			<div id="header"></div>
 		</div><!--close header id-->
 		<div id="navigation">
