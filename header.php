@@ -30,11 +30,11 @@
 			<div id="menu" class="menu">
 				<ul class="menu sf-menu">
 					<a rel="me" href="<?php bloginfo('url'); ?>">Home</a> 
-					<a rel="me" href="/contact-me/">Contact Me</a> 
-					<a rel="me" href="http://gallery.mattrude.com/">Photo Gallery</a> 
-					<a rel="me" href="/plugins/">Plugins</a> 
-					<a rel="me" href="/calendar/">Calendar</a> 
-					<a rel="me" href="/category/tweets/">My Tweets</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/mental-health/">Mental Health</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/sensory-health/">Sensory Health</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/organization/">Organization</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/education/">Education</a> 
+					<a rel="me" href="<?php bloginfo('url'); ?>/behavior/">Behavior</a> 
 				</ul>
 			</div>
 		</div>
