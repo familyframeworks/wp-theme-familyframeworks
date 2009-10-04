@@ -405,7 +405,7 @@ img.wp-smiley {
 	}
 #menu {
 	overflow: hidden;
-	width: 1024px;
+	width: 800px;
 	height: 33px;
 	margin: 0 auto;
 	background: url(images/nav-border.png) repeat-y left  0;
@@ -433,7 +433,7 @@ img.wp-smiley {
 #container {
 	overflow: hidden;
 	
-	width: 1024px;
+	width: 800px;
 	margin: 20px auto;
 	}
 #container a {
@@ -442,12 +442,12 @@ img.wp-smiley {
 #content {
 	overflow: hidden;
 	float: left;
-	width: 700px;
+	width: 550px;
 	}
 
 /* Breadcrumb trail */
 .breadcrumb {
-	width: 1024px;
+	width: 800px;
 	margin: 0 auto 20px auto;
 	padding: 4px 0;
 	font-size: 11px;
@@ -569,7 +569,7 @@ p.pages a {
 	margin: 0;
 	}
 .page-template-no-widgets #content, .no-widgets #content, .attachment #content {
-	width: 1024px;
+	width: 800px;
 	}
 .post-box, .page-template-widgets #content .widget {
 	overflow: hidden;
@@ -639,7 +639,7 @@ p.pages a {
 ************************************************/
 #primary {
 	float: right;
-	width: 300px;
+	width: 240px;
 	
 	}
 .widget {
@@ -875,7 +875,7 @@ a.comment-link:hover {
 .gallerypost {
 	background-color:#fff;
 	display: block;
-	hNeight: 300px;
+	height: 300px;
 	margin: 0px 0px 10px 0px;
 	padding: 20px 10px 10px 10px;
 	overflow: hidden;
@@ -991,7 +991,7 @@ a.comment-link:hover {
 #footer {
 	overflow: hidden;
 	clear: both;
-	width: 1024px;
+	width: 800px;
 	margin: 0px auto 10px auto;
 	}
 #footer img {
