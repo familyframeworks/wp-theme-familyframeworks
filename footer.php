@@ -1,13 +1,12 @@
 </div> 
 <div id="footer-container">
 	<div id="footer">
-		<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/wordpress-logo.png" height="100" width="100"></a>
+		<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/ff_logo_only-1.png" height="100" width="100"></a>
 		<div id="footer_text" class="block">
 			<p>
+			Copyright © 2009, <a href="http://familyframeworks.com/">Family Frameworks, LLC</a><br />
 			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
 			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
-			Proudly powered by <a href="http://wordpress.org/">WordPress</a>.<br />
-			Copyright © 1980 – 2009 <a href="http://mattrude.com/">Matt Rude</a><br />
 			<?php global $Panel; echo $Panel->Settings('FooterText'); ?><br />
 			</p>
 		</div>

@@ -984,14 +984,11 @@ a.comment-link:hover {
 	clear: both;
 	width: 100%;
 	padding: 20px 0 0 0;
-	color: #aaa;
-	background: #0a2a35;
-	border-top: 2px solid #000;
 	}
 #footer {
 	overflow: hidden;
 	clear: both;
-	width: 800px;
+	width: 500px;
 	margin: 0px auto 10px auto;
 	}
 #footer img {
@@ -1001,6 +998,9 @@ a.comment-link:hover {
 #footer p {
 	margin: 0;
 	line-height: 16px;
+	}
+#footer a {
+	color: #01527A;
 	}
 #footer_text {
 	border:0 none;1
