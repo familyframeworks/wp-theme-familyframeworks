@@ -30,19 +30,19 @@
 			<div id="menu" class="menu">
 				<ul class="menu sf-menu">
 					<div id="navigation-1">
-						<a rel="me" href="<?php bloginfo('url'); ?>/mental-health/">Mental Health</a> 
+						<a rel="me" href="<?php bloginfo('url'); ?>/ervices/ental-health/">Mental Health</a> 
 					</div>
 					<div id="navigation-2">
-						<a rel="me" href="<?php bloginfo('url'); ?>/sensory-health/">Sensory Health</a> 
+						<a rel="me" href="<?php bloginfo('url'); ?>/services/sensory-health/">Sensory Health</a> 
 					</div>
 					<div id="navigation-3">
-						<a rel="me" href="<?php bloginfo('url'); ?>/organization/">Organization</a> 
+						<a rel="me" href="<?php bloginfo('url'); ?>/services/organization/">Organization</a> 
 					</div>
 					<div id="navigation-4">
-						<a rel="me" href="<?php bloginfo('url'); ?>/education/">Education</a> 
+						<a rel="me" href="<?php bloginfo('url'); ?>/services/education/">Education</a> 
 					</div>
 					<div id="navigation-5">
-						<a rel="me" href="<?php bloginfo('url'); ?>/behavior/">Behavior</a> 
+						<a rel="me" href="<?php bloginfo('url'); ?>/services/behavior/">Behavior</a> 
 					</div>
 				</ul>
 			</div>
