@@ -30,7 +30,7 @@
 			<div id="menu" class="menu">
 				<ul class="menu sf-menu">
 					<div id="navigation-1">
-						<a rel="me" href="<?php bloginfo('url'); ?>/ervices/ental-health/">Mental Health</a> 
+						<a rel="me" href="<?php bloginfo('url'); ?>/services/mental-health/">Mental Health</a> 
 					</div>
 					<div id="navigation-2">
 						<a rel="me" href="<?php bloginfo('url'); ?>/services/sensory-health/">Sensory Health</a> 
