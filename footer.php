@@ -1,15 +1,25 @@
 </div> 
 <div id="footer-container">
 	<div id="footer">
-		<a href="http://wordpress.org/"><img src="<?php bloginfo('template_url') ?>/images/ff_logo_only-1.png" height="100" width="100"></a>
-		<div id="footer_text" class="block">
+		<div id="footer-logo">
+			<a href="http://familyframeworks.org/"><img src="<?php bloginfo('template_url') ?>/images/ff_logo_only-1.png"></a>
+		</div>
+		<div id="footer-text">
 			<p>
-			Copyright &copy; 2006 - <?php echo date("Y") ?> by <a href="http://familyframeworks.com/">Family Frameworks, LLC</a><br />
+			Copyright &copy; 2006 – <?php echo date("Y") ?> <a href="http://familyframeworks.com/">Family Frameworks, LLC</a><br />
 			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
 			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
 			<?php global $Panel; echo $Panel->Settings('FooterText'); ?><br />
 			</p>
 		</div>
+		<div id="footer-address">
+			<p>
+			Family Frameworks LLC. <br />
+			1937 Woodlane Drive, Suite 203<br />
+			Woodbury, MN 55125<br />
+			(651) 815-0333
+			<p>
+		<div>
 	</div>
 	<!--footer plugin hook-->
 	<?php wp_footer(); ?>

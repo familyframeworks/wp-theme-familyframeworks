@@ -1055,8 +1055,9 @@ a.comment-link:hover {
 #footer {
 	overflow: hidden;
 	clear: both;
-	width: 500px;
+	width: 900px;
 	margin: 0px auto 10px auto;
+	border-top: 1px solid #E2E2E2;
 	}
 #footer img {
 	left:19px;
@@ -1069,7 +1070,8 @@ a.comment-link:hover {
 #footer a {
 	color: #01527A;
 	}
-#footer_text {
+#footer-text {
+	float: left;
 	border:0 none;1
 	vertical-align: center;
 	display:inline;
@@ -1077,8 +1079,26 @@ a.comment-link:hover {
 	font-size:12px;
 	font-weight:normal;
 	left:19px;
-	margin: 5px;
+	margin: 35px 5px 5px 5px;
+	height: 100%;
 	position:relative;
 	text-align:left;
 	text-decoration:none;
+	}
+#footer-address {
+	float: right;
+        border:0 none;1
+        vertical-align: center;
+        display:inline;
+        font-family:Georgia,"Times New Roman",Times,serif;
+        font-size:12px;
+        font-weight:normal;
+        left:19px;
+        margin: 25px 10px 0 0;
+	width: 200px;
+        height: 100%;
+        position:relative;
+        text-align:left;
+        text-decoration:none;
+
 	}
