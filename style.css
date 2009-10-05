@@ -75,10 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 	
 	padding: 2px 0 2px 15px;
-	background: url(images/bullet.png) no-repeat 0 8px;
+	background: url(images/ff-bullet.png) no-repeat 0 8px;
 	}
 #content ul li li {
-	background: url(images/bullet-alt.png) no-repeat 0 8px;
+	background: url(images/ff-bullet.png) no-repeat 0 8px;
 	}
 
 /* Blockquotes */
@@ -730,7 +730,7 @@ p.pages a {
 .widget li {
 	margin: 0 0 6px 0;
 	padding: 0 0 6px 15px;
-	background: url(images/bullet.png) no-repeat 0 6px;
+	background: url(images/ff-bullet.png) no-repeat 0 6px;
 	border-bottom: 1px solid #e2e2e2;
 	}
 .widget ul ul {
@@ -739,7 +739,7 @@ p.pages a {
 .widget li li {
 	margin: 0 0 3px 0;
 	padding: 0 0 3px 15px;
-	background: url(images/bullet-alt.png) no-repeat 0 6px;
+	background: url(images/ff-bullet.png) no-repeat 0 6px;
 	border-bottom: none;
 	}
 
@@ -911,7 +911,7 @@ a.comment-link:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(images/bullet.png) no-repeat scroll 0 10px;
+	background:transparent url(images/ff-bullet.png) no-repeat scroll 0 10px;
 	overflow: hidden;
 	margin: 0 0 0 0;
 	padding: 5px 19px 5px 19px;
@@ -926,7 +926,7 @@ a.comment-link:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(images/bullet.png) no-repeat scroll 0 6px;
+	background:transparent url(images/ff-bullet.png) no-repeat scroll 0 6px;
 	border-bottom:1px solid #E2E2E2;
 	margin:0 0 6px;
 	padding:0 0 6px 15px;
