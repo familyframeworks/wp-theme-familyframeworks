@@ -2,14 +2,13 @@
 <div id="footer-container">
 	<div id="footer">
 		<div id="footer-logo">
-			<a href="http://familyframeworks.org/"><img src="<?php bloginfo('template_url') ?>/images/ff_logo_only-1.png"></a>
+			<a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_url') ?>/images/ff_logo_only-1.png"></a>
 		</div>
 		<div id="footer-text">
 			<p>
-			Copyright &copy; 2006 – <?php echo date("Y") ?> <a href="http://familyframeworks.com/">Family Frameworks, LLC</a><br />
+			Copyright &copy; 2006 – <?php echo date("Y") ?> <a href="<?php bloginfo('url') ?>">Family Frameworks, LLC</a><br />
 			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
 			Site Designed by <a href="http://mattrude.com/">Matt Rude</a>.<br />
-			<?php global $Panel; echo $Panel->Settings('FooterText'); ?><br />
 			</p>
 		</div>
 		<div id="footer-address">
