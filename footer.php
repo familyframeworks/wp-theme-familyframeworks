@@ -13,7 +13,7 @@
 		</div>
 		<div id="footer-address">
 			<p>
-			Family Frameworks LLC. <br />
+			Family Frameworks, LLC <br />
 			1937 Woodlane Drive, Suite 203<br />
 			Woodbury, MN 55125<br />
 			(651) 815-0333
