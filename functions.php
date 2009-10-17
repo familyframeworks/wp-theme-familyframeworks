@@ -10,13 +10,6 @@ if(function_exists('register_sidebar'))
 		'after_title' => '</h3>',
 	));
 	
-add_action( 'init', 'create_my_taxonomies', 0 );
-function create_my_taxonomies() {
-	register_taxonomy( 'people', 'post', array( 'hierarchical' => false, 'label' => 'People', 'query_var' => true, 'rewrite' => true ) );
-	register_taxonomy( 'places', 'post', array( 'hierarchical' => false, 'label' => 'Places', 'query_var' => true, 'rewrite' => true ) );
-	register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => 'Events', 'query_var' => true, 'rewrite' => true ) );
-}
-
 // Add Custom User Contact Methods
 function add_twitter_contactmethod( $contactmethods ) {
   // Add Facebook & Twitter support
