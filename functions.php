@@ -17,6 +17,22 @@ function create_my_taxonomies() {
 	register_taxonomy( 'events', 'post', array( 'hierarchical' => false, 'label' => 'Events', 'query_var' => true, 'rewrite' => true ) );
 }
 
+// Add Custom User Contact Methods
+function add_twitter_contactmethod( $contactmethods ) {
+  // Add Facebook & Twitter support
+  $contactmethods['facebook'] = 'Facebook URL';
+  $contactmethods['twitter'] = 'Twitter';
+ 
+  // Remove Yahoo IM, AOL IM, & Jabber
+  unset($contactmethods['aim']);
+  unset($contactmethods['jabber']);
+  unset($contactmethods['yim']);
+ 
+  return $contactmethods;
+}
+add_filter('user_contactmethods','add_twitter_contactmethod',10,1);
+
+
 // Adds robots.txt support
 $defaultrobotstxt = "# This is the default robots.txt file
 User-agent: *
