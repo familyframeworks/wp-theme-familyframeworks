@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" lang="eng">
 
 <head>
     <link rel='shortcut icon' href='<?php bloginfo('template_url') ?>/images/favicon.ico' />
@@ -22,10 +22,8 @@
 
 <body>
 
-<div id="body-container">
+	<div id="body-container">
 		<div id="header-container">
-			<div id="header"></div>
-		</div><!--close header id-->
 		<div id="navigation">
 			<div id="menu" class="menu">
 				<ul class="menu sf-menu">
@@ -47,4 +45,4 @@
 				</ul>
 			</div>
 		</div>
-<div id="container">
+		<div id="container">
