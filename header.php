@@ -24,6 +24,8 @@
 
 	<div id="body-container">
 		<div id="header-container">
+			<div id="header"></div>
+		</div>
 		<div id="navigation">
 			<div id="menu" class="menu">
 				<ul class="menu sf-menu">
