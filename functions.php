@@ -69,9 +69,9 @@ array
 	array
 	(
 		'Type'=>'TextArea',
-		'ID'=>'FooterText',
-		'Label'=>'<strong>Footer Text</strong>',
-		'Description' => 'Add a footer to the bottom of ever page.'
+		'ID'=>'AddressText',
+		'Label'=>'<strong>Address Text</strong>',
+		'Description' => 'Displays the Address on the bottom of ever page.'
 	),
 	array
 	(
@@ -108,7 +108,7 @@ array
 );
 
 add_action('init', 'robots_txt');
-$Panel = new ControlPanel('Milly');
+$Panel = new ControlPanel('');
 $Panel->SetOptions($Options);
 $Panel->Initialize();
 
