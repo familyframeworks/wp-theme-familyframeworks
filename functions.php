@@ -60,14 +60,6 @@ array
 	),
 	array
 	(
-		'Type'=>'CheckBox',
-		'ID'=>'LightboxEnabled',
-		'Label'=>'<strong>Enable Lightbox images module</strong>',
-		'Description' => 'This may interfere with some plugins.',
-		'Default'=> 'false'
-	),
-	array
-	(
 		'Type'=>'TextArea',
 		'ID'=>'AddressText',
 		'Label'=>'<strong>Address Text</strong>',
