@@ -30,7 +30,8 @@ add_filter('user_contactmethods','add_twitter_contactmethod',10,1);
 // Adds robots.txt support
 $defaultrobotstxt = "# This is the default robots.txt file
 User-agent: *
-Disallow:";
+Allow: /
+";
 
 add_option("robots_txt", $defaultrobotstxt, "Contents of robots.txt", 'no');		// default value
 
