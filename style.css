@@ -287,7 +287,7 @@ img.wp-smiley {
 	overflow: hidden;
 	max-width: 598px;
 	padding: 5px 0;
-	background: #EFF1E1;
+/*	background: #EFF1E1; */
 	border: 1px solid #e2e2e2;
 	text-align: center;
 	}
@@ -499,7 +499,6 @@ img.wp-smiley {
 ************************************************/
 #container {
 	overflow: hidden;
-	
 	width: 900px;
 	margin: 20px auto;
 	}
@@ -737,9 +736,10 @@ p.pages a {
 	margin: 6px 0 0 0;
 	}
 .widget li li {
-	margin: 0 0 3px 0;
+	margin: 6px 0 0 3px;
 	padding: 0 0 3px 15px;
 	background: url(images/ff-bullet.png) no-repeat 0 6px;
+	border-top: 1px solid #E2E2E2;
 	border-bottom: none;
 	}
 
@@ -1050,7 +1050,6 @@ a.comment-link:hover {
 	overflow: hidden;
 	clear: both;
 	width: 100%;
-	padding: 20px 0 0 0;
 	}
 #footer {
 	overflow: hidden;
@@ -1094,7 +1093,7 @@ a.comment-link:hover {
         font-size:12px;
         font-weight:normal;
         left:19px;
-        margin: 25px 10px 0 0;
+        margin: 25px 30px 0 0;
 	width: 200px;
         height: 100%;
         position:relative;
