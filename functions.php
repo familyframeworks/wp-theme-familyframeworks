@@ -1,6 +1,7 @@
 <?php
 require_once('functions/control-panel.php');
 require_once('base/base.php');
+require_once('functions/colored-posts-wiget.php');
 
 if(function_exists('register_sidebar'))
 	register_sidebar(array (
@@ -10,6 +11,9 @@ if(function_exists('register_sidebar'))
 		'after_title' => '</h3>',
 	));
 	
+function new_excerpt_length($length) {
+        return 25;
+}
 // Add Custom User Contact Methods
 function add_twitter_contactmethod( $contactmethods ) {
   // Add Facebook & Twitter support
