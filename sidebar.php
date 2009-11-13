@@ -23,5 +23,4 @@
 		<?php wp_list_categories('show_count=0&title_li=<span class="sidetitle">Categories</span>'); ?>
 		
 	<?php endif; ?>
-	</ul>
 </div>
