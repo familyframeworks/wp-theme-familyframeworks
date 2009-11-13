@@ -23,7 +23,9 @@
 	</div>
 	<!--footer plugin hook-->
 	<?php wp_footer(); ?>
-</div>
+</div><!--closing container -->
+</div><!--closing body-container -->
+
 <?php google_analytics(); ?>
 <!--Closeing tags-->
 </body>
