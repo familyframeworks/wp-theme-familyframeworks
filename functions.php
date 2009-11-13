@@ -4,7 +4,7 @@ require_once('base/base.php');
 
 if(function_exists('register_sidebar'))
 	register_sidebar(array (
-		'before_widget' => '<div id="linkcat" class="widget bookmarks widget-bookmarks">',
+		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
