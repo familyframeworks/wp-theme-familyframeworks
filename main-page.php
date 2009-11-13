@@ -18,7 +18,7 @@
 				}?>
 				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 			</div>
-			</div>
+		</div>
 		</div>
 		<?php endwhile; endif; ?>
 	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
