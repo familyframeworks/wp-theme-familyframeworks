@@ -16,10 +16,10 @@
 		<div id="footer-address">
 			<p>
 			<?php global $Panel; ?>
-			<?php $FooterAddressText = $Panel->Settings('AddressText');
-			echo $FooterAddressText; ?>
-			<p>
-		<div>
+			<?php $FooterAddressText = $Panel->Settings('AddressText'); ?>
+			<?php echo $FooterAddressText; ?>
+			</p>
+		</div>
 	</div>
 	<!--footer plugin hook-->
 	<?php wp_footer(); ?>
