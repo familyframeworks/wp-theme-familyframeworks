@@ -2,7 +2,9 @@
 <div id="footer-container">
 	<div id="footer">
 		<div id="footer-logo">
-			<a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_url') ?>/images/ff_logo_only-1.png" alt="Family Frame Works Logo only"></a>
+			<a href="<?php bloginfo('url') ?>">
+				<img src="<?php bloginfo('template_url') ?>/images/ff_logo_only-1.png" alt="Logo" />
+			</a>
 		</div>
 		<div id="footer-text">
 			<p>
