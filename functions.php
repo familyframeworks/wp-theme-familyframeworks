@@ -5,6 +5,14 @@ require_once('functions/colored-posts-wiget.php');
 
 if(function_exists('register_sidebar'))
 	register_sidebar(array (
+		'name' => 'Left Sidebar',
+		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	));
+	register_sidebar(array (
+		'name' => 'Right Sidebar',
 		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
@@ -28,6 +36,20 @@ function add_twitter_contactmethod( $contactmethods ) {
   return $contactmethods;
 }
 add_filter('user_contactmethods','add_twitter_contactmethod',10,1);
+
+/**
+ * add a default-gravatar to options
+ */
+if ( !function_exists('fb_addgravatar') ) {
+	function fb_addgravatar( $avatar_defaults ) {
+		$myavatar = get_bloginfo('template_directory') . '/images/ff_logo_only-1.png';
+		$avatar_defaults[$myavatar] = 'Family Frameworks';
+ 
+		return $avatar_defaults;
+	}
+ 
+	add_filter( 'avatar_defaults', 'fb_addgravatar' );
+}
 
 
 // Adds robots.txt support
