@@ -1,7 +1,7 @@
 <div id="primary" class="aside">
 	<?php
  	/* Widgetized sidebar, if you have the plugin installed. */
-	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Right Sidebar') ) : ?>
 		<li><?php include (TEMPLATEPATH . '/searchform.php'); ?></li>
 		<!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it.-->
 		<li class="calendar">
