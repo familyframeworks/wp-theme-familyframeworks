@@ -339,7 +339,10 @@ img.wp-smiley {
 	width: 900px;
 	height: 113px;
 	margin: 0 auto;
-	background: url(images/header_logo.jpg) no-repeat center 0;
+	}
+#header img {
+	margin: 0 50px;
+	padding: 0;
 	}
 #header-title {
 	-moz-background-clip:border;
