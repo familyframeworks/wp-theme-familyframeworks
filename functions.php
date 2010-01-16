@@ -2,6 +2,7 @@
 require_once('functions/control-panel.php');
 require_once('base/base.php');
 require_once('functions/colored-posts-wiget.php');
+require_once('functions/private-pages.php');
 
 if(function_exists('register_sidebar'))
 	register_sidebar(array (
