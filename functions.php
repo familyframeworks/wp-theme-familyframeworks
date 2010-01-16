@@ -51,6 +51,16 @@ if ( !function_exists('fb_addgravatar') ) {
 	add_filter( 'avatar_defaults', 'fb_addgravatar' );
 }
 
+//hook the administrative header output
+add_action('admin_head', 'ff_custom_logo');
+
+function ff_custom_logo() {
+  echo '
+  <style type="text/css">
+  #header-logo { background-image: url('.get_bloginfo('template_directory').'/images/ff_logo_only-2.png) !important; }
+  </style>
+  ';
+}
 
 // Adds robots.txt support
 $defaultrobotstxt = "# This is the default robots.txt file
