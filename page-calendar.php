@@ -5,7 +5,7 @@
     <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
       <h1 class="attr"><?php the_title(); ?></h1>
       <div class="entry">
-	<p>You must be logged into <a href="http://calendar.google.com" target="_blank">Google</a> in-order to view the content of this calender.</p>
+	<p>You <strong>must</strong> be logged into <a href="http://calendar.google.com" target="_blank">Google</a> in-order to view the content of this calender. If you are not logged in, <a href="http://calendar.google.com" target="_blank">please login here</a>.</p>
         <iframe width=100% height=600px frameborder=0 src="http://www.google.com/calendar/embed?src=info%40familyframeworks.com"></iframe>
 	<br />
         <?php the_content(); ?>
