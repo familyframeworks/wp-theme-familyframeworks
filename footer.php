@@ -9,7 +9,6 @@
 		<div id="footer-text">
 			<p>
 			Copyright &copy; 2006 – <?php echo date("Y") ?> <a href="<?php bloginfo('url') ?>">Family Frameworks, LLC</a><br />
-			This page took <?php timer_stop(1); ?> seconds of computer labor to produce.<br />
 			Site Designed and Hosted by <a href="http://mattrude.com/">Matt Rude</a>.<br />
 			</p>
 		</div>

@@ -22,15 +22,18 @@ class private_pages_widget extends WP_Widget {
         </div>
         <ul>
         <li class="page_item private-page-1">
-          <a href="<?php bloginfo('url'); ?>/calendar/">Calendar</a>
+          <a href="http://www.google.com/calendar/renderOnline">Calendar</a>
         </li>
         <li class="page_item private-page-2">
+          <a href="https://mail.mattrude.com/roundcube/">Web Mail</a>
+        </li>
+        <li class="page_item private-page-3">
           <a href="<?php bloginfo('url'); ?>/wp-admin/">Admin Dashboard</a>
         </li>
-        <li class="page_item private-page-2">
+        <li class="page_item private-page-4">
 	  <?php edit_post_link('Edit this page'); ?>
         </li>
-        <li class="page_item private-page-2">
+        <li class="page_item private-page-5">
           <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="Logout">Logout</a>
         </li>
         </ul>
