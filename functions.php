@@ -5,13 +5,13 @@ require_once('functions/colored-posts-wiget.php');
 require_once('functions/private-pages.php');
 
 if(function_exists('register_sidebar'))
-	register_sidebar(array (
-		'name' => 'Left Sidebar',
-		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
-		'after_widget' => '</div>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	));
+//	register_sidebar(array (
+//		'name' => 'Left Sidebar',
+//		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
+//		'after_widget' => '</div>',
+//		'before_title' => '<h3 class="widget-title">',
+//		'after_title' => '</h3>',
+//	));
 	register_sidebar(array (
 		'name' => 'Right Sidebar',
 		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
@@ -25,9 +25,10 @@ function new_excerpt_length($length) {
 }
 // Add Custom User Contact Methods
 function add_twitter_contactmethod( $contactmethods ) {
+
   // Add Facebook & Twitter support
   $contactmethods['facebook'] = 'Facebook URL';
-  $contactmethods['twitter'] = 'Twitter';
+  $contactmethods['twitter'] = 'Twitter ID';
  
   // Remove Yahoo IM, AOL IM, & Jabber
   unset($contactmethods['aim']);
