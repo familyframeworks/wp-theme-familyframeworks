@@ -7,8 +7,8 @@ class private_pages_widget extends WP_Widget {
       $moFile = dirname(__FILE__) . "/languages/private_pages_widget_" .  $currentLocale . ".mo";
       if(@file_exists($moFile) && is_readable($moFile)) load_textdomain('', $moFile);
     }
-    $private_pages_widget_name = __('Random Image Widget', 'random-image-block');
-    $private_pages_widget_description = __('Displays a random gallery image.', 'random-image-block');
+    $private_pages_widget_name = __('FFW Logged on Widget', 'private-pages-widget');
+    $private_pages_widget_description = __('Displays links for the Family Frameworks staff members to use while on the site.', 'private-pages-widget');
     $widget_ops = array('classname' => 'private_pages_widget', 'description' => $private_pages_widget_description );
     $this->WP_Widget('private_pages_widget', $private_pages_widget_name, $widget_ops);
   }  
