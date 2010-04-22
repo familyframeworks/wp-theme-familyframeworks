@@ -1097,6 +1097,12 @@ a.comment-link:hover {
 #footer a {
 	color: #01527A;
 	}
+#footer-logo {
+	background: url("images/header_logo.jpg") no-repeat scroll -235px 6px transparent;
+        float:left;
+	height: 120px;
+	width: 110px;
+	}
 #footer-text {
 	float: left;
 	border:0 none;1

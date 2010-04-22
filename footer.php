@@ -1,11 +1,7 @@
 </div> 
 <div id="footer-container">
 	<div id="footer">
-		<div id="footer-logo">
-			<a href="<?php bloginfo('url') ?>">
-				<img src="<?php bloginfo('template_url') ?>/images/ff_logo_only-1.png" alt="Logo" />
-			</a>
-		</div>
+			<a href="<?php bloginfo('url') ?>"><div id="footer-logo"></div></a>
 		<div id="footer-text">
 			<p>
 			Copyright &copy; 2006 – <?php echo date("Y") ?> <a href="<?php bloginfo('url') ?>">Family Frameworks, LLC</a><br />
