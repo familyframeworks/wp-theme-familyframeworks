@@ -10,9 +10,9 @@
 		</div>
 		<div id="footer-address">
 			<p>
-			<?php global $Panel; ?>
-			<?php $FooterAddressText = $Panel->Settings('AddressText'); ?>
-			<?php echo $FooterAddressText; ?>
+			<?php global $Panel;
+			$FooterAddressText = $Panel->Settings('AddressText');
+			echo newline2br($FooterAddressText); ?>
 			</p>
 		</div>
 	</div>

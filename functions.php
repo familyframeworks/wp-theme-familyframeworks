@@ -39,6 +39,11 @@ function add_twitter_contactmethod( $contactmethods ) {
 }
 add_filter('user_contactmethods','add_twitter_contactmethod',10,1);
 
+function newline2br( $input ) {
+  $out = str_replace( "\n", "<br />", $input );
+  return $out;
+}
+
 /**
  * add a default-gravatar to options
  */
