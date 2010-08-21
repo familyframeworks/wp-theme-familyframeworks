@@ -30,7 +30,7 @@ if($comments) {
 
 <?php if (have_comments($comment_type = 'comment')) : ?>
 	<div id="comments"			
-		<h3 id="comments-number" class="comments-header"><?php echo $comment_count . " Comments"; ?></h3>
+		<h1 id="comments-number" class="comments-header"><?php echo $comment_count . " Comments"; ?></h1>
 
 	<ol class="comment-list">
 		<?php wp_list_comments(array('style' => 'ol', 'type' => 'comment')); ?>
@@ -57,7 +57,7 @@ if($comments) {
 <?php else : ?>
 
 <div id="respond">
-<h3><?php comment_form_title( 'Leave a Comment', 'Reply to %s' ); ?></h3>
+<h1><?php comment_form_title( 'Leave a Comment', 'Reply to %s' ); ?></h1>
 
 <div id="cancel-comment-reply">
 	<small><?php cancel_comment_reply_link() ?></small>
@@ -67,7 +67,7 @@ if($comments) {
 
 <?php if ( $user_ID ) : ?>
 
-<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a></p>
+<div>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a></div>
 
 <textarea id="comment" tabindex="4" cols="20" rows="10" onfocus="if ( value == 'Your comment please...' ) { this.value='' }" name="comment">Your comment please...</textarea>
 

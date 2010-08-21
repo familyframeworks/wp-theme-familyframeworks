@@ -38,6 +38,8 @@ a:hover, a:active {
 h1, h2, h3, h4, h5, h6 {
 	font-family: arial, verdana, sans-serif;
 	}
+h2 {font-size: 18px;}
+h3 {font-size: 18px;}
 .post h1 {
 	-x-system-font:none;
 	border-bottom:1px solid #E2E2E2;
@@ -703,6 +705,9 @@ p.pages a {
 #comments-template .paged-navigation {
 	overflow: hidden;
 	margin: 0 0 20px 0;
+	}
+#commentform {
+	padding: 5px 0px;
 	}
 #comments-template .paged-navigation .page-numbers, 
 #comments-template .paged-navigation .next, #comments-template .paged-navigation .prev {
