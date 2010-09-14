@@ -5,13 +5,6 @@ require_once('functions/colored-posts-wiget.php');
 require_once('functions/private-pages.php');
 
 if(function_exists('register_sidebar'))
-//	register_sidebar(array (
-//		'name' => 'Left Sidebar',
-//		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
-//		'after_widget' => '</div>',
-//		'before_title' => '<h3 class="widget-title">',
-//		'after_title' => '</h3>',
-//	));
 	register_sidebar(array (
 		'name' => 'Right Sidebar',
 		'before_widget' => '<div class="widget bookmarks widget-bookmarks">',
@@ -23,6 +16,18 @@ if(function_exists('register_sidebar'))
 function new_excerpt_length($length) {
         return 25;
 }
+
+function ffw_admin_favicon() {
+    $url = get_option('siteurl');
+    $url = $url . '/wp-content/themes/familyframeworks/images/favicon.ico';
+    echo '
+    <link rel="shortcut icon" href="' . $url . '" />
+    ';
+}
+
+add_action('admin_head', 'ffw_admin_favicon');
+
+
 // Add Custom User Contact Methods
 function add_twitter_contactmethod( $contactmethods ) {
 
@@ -47,15 +52,15 @@ function newline2br( $input ) {
 /**
  * add a default-gravatar to options
  */
-if ( !function_exists('fb_addgravatar') ) {
-	function fb_addgravatar( $avatar_defaults ) {
+if ( !function_exists('ffw_addgravatar') ) {
+	function ffw_addgravatar( $avatar_defaults ) {
 		$myavatar = get_bloginfo('template_directory') . '/images/ff_logo_only-1.png';
 		$avatar_defaults[$myavatar] = 'Family Frameworks';
  
 		return $avatar_defaults;
 	}
  
-	add_filter( 'avatar_defaults', 'fb_addgravatar' );
+	add_filter( 'avatar_defaults', 'ffw_addgravatar' );
 }
 
 //hook the administrative header output
@@ -70,29 +75,6 @@ function ff_custom_logo() {
 }
 
 // Adds robots.txt support
-$defaultrobotstxt = "# This is the default robots.txt file
-User-agent: *
-Allow: /
-";
-
-add_option("robots_txt", $defaultrobotstxt, "Contents of robots.txt", 'no');		// default value
-
-function robots_txt(){
-	$request = str_replace( get_bloginfo('url'), '', 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] );
-
-	if ( (get_bloginfo('url').'/robots.txt' != 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']) && ('/robots.txt' != $_SERVER['REQUEST_URI']) && ('robots.txt' != $_SERVER['REQUEST_URI']) )
-		return;		// checking whether they're requesting robots.txt
-	
-	$robotstxt_out = get_option('robots_txt');
-	
-	if ( !$robotstxt_out)
-		return;
-
-	header('Content-type: text/plain');
-	print $robotstxt_out;
-	die;
-}
-
 $Options =
 array
 (
@@ -142,7 +124,6 @@ array
 	)
 );
 
-add_action('init', 'robots_txt');
 $Panel = new ControlPanel('');
 $Panel->SetOptions($Options);
 $Panel->Initialize();
