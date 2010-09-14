@@ -155,11 +155,11 @@ input {
 	}
 .floatleft {
 	float: left;
-	padding: 0 6px 9px 6px;
+	padding: 0 10px;
 	}
 .floatright {
 	float: right;
-	padding: 0 6px 9px 6px;
+	padding: 0 10px;
 	}
 .text-input {
 	display: block;
@@ -1139,3 +1139,4 @@ a.comment-link:hover {
         text-decoration:none;
 
 	}
+.navigation { padding: 5px }

@@ -62,7 +62,7 @@ class ControlPanel
 	}
 	function AdminMenu()
 	{
-		add_theme_page($this->Name . ' Control Panel', $this->Name . ' Control Panel', 'edit_themes', basename(__FILE__), array(&$this, 'OptionsMenu'));
+		add_theme_page( 'Theme Options', 'Theme Options', 'edit_themes', basename(__FILE__), array(&$this, 'OptionsMenu'));
 	}
 	
 	function AdminHead()
@@ -92,9 +92,9 @@ class ControlPanel
 	/* Print the options page */
 	function OptionsMenu()
 	{
-		echo '<div class="ajaxmessage updated fade below-h2 message"><p></p></div>';
-		echo '<div class="metabox-holder wrap" id="poststuff" class="stuffbox">';
-		echo '<h2 class="custom">' . $this->Name . ' Settings</h2>';
+		echo '<div class="wrap">';
+		echo '<div id="icon-themes" class="icon32"><br></div>';
+		echo '<h2 class="custom">Theme Options</h2><br>';
 		if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade below-h2" style="background-color: rgb(255, 251, 204); margin-bottom:16px;"><p style="font-style:normal;font-size:13px;">' . $this->Name . ' Settings Saved Successfully.</p></div>';
 		echo '<form method="post" action="themes.php?page=' . basename(__FILE__) . '" id="settings">';
 		$Settings = $this->Settings;
@@ -112,7 +112,7 @@ class ControlPanel
 			switch ($Type)
 			{
 				case 'Title':
-					$ToPrint .= '<div class="stuffbox custom"><h3 class="hndle">' . $Value . '</h3><div class="inside">';
+					$ToPrint .= '<div id="poststuff" class="stuffbox custom"><h3 class="hndle">' . $Value . '</h3><div class="inside">';
 					break;
 				case 'Close':
 					$ToPrint .= '<p class="submit custom"><input name="save" type="submit" value="Save All Changes" /><input type="hidden" name="action" value="save" /></p>';
@@ -158,12 +158,6 @@ class ControlPanel
 	}
 	// End Category Excluder to the Control Pannel
 
-	// Add Robots.txt to the Control Panel
-        if (function_exists('mdr_robots_controlpanel')) {
-          mdr_robots_controlpanel();
-        }
-        // End Robots.txt to the Control Panel
-
 	}
 	function Settings($Option)
 	{
@@ -171,5 +165,4 @@ class ControlPanel
 	}
 }
 
-add_action('init', 'robots_txt');
 ?>

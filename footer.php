@@ -6,6 +6,10 @@
 			<p>
 			Copyright &copy; 2006 – <?php echo date("Y") ?> <a href="<?php bloginfo('url') ?>">Family Frameworks, LLC</a><br />
 			Site Designed and Hosted by <a href="http://mattrude.com/">Matt Rude</a>.<br />
+			<?php if ( is_user_logged_in() ) { ?>
+			This page took <?php timer_stop(1); ?> seconds of computer labor,<br/>
+			and required <?php echo get_num_queries(); ?> questions to produce.
+			<?php } ?>
 			</p>
 		</div>
 		<div id="footer-address">
