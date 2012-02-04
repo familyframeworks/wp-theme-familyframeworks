@@ -4,7 +4,6 @@
 
 <head>
     <link rel='shortcut icon' href='<?php bloginfo('template_url') ?>/images/favicon.ico' />
-    <?php wp_head(); ?>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
     <title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title>
