@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" lang="eng">
 
 <head>
-    <link rel='shortcut icon' href='<?php bloginfo('template_url') ?>/images/favicon.ico' />
+    <!--<link rel='shortcut icon' href='<?php bloginfo('template_url') ?>/images/favicon.ico' />-->
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
     <title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title>
