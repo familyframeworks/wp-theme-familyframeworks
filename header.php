@@ -24,7 +24,7 @@
 	<div id="body-container">
 		<div id="header-container">
 			<div id="header">
-				<a rel="me" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/header_logo.jpg"></a>
+				<a rel="me" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/header_logo.jpg" width="800px" height="113px"></a>
 			</div>
 		</div>
 		<div id="navigation">
