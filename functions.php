@@ -28,6 +28,15 @@ function ffw_admin_favicon() {
 add_action('admin_head', 'ffw_admin_favicon');
 
 
+// Remove Query Strings from javascripts & css files
+function _remove_script_version( $src ){
+	$parts = explode( '?', $src );
+	return $parts[0];
+}
+add_filter( 'script_loader_src', '_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', '_remove_script_version', 15, 1 );
+
+
 // Add Custom User Contact Methods
 function add_twitter_contactmethod( $contactmethods ) {
 
