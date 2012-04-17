@@ -2,9 +2,11 @@
 
 <div id="content">
 		<div class="post">
-			<h2 class="center">Oops! Couldn't find what you were looking for.</h2>
-			<p class="center">Sorry, but you are looking for something that isn't here.</p>
-			<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+			<h1 class="center">404 Error - Page Can't be Found</h1>
+			<br />
+			<br />
+			<h2>Sorry, but the page you are looking for could not be found.</h2>
+			<br />
 		</div>
 </div>
 
